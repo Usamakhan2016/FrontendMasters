@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #site-brand{
+            color: red;
+        }
+        h1#site-brand{
+            color: blue;
+        }
+        h1#site-brand.nav-head{
+            color: pink;
+        }
+        h1.nav-head.nav-main.other-useful-class.nav-head{
+            color: green;
+        }
+        #site-brand-2{
+            color: red;
+            border: 1px solid red;
+        }
+        .nav-head-2{
+            color: green !important;
+            border: 1px solid green;
+        }
+        .btn.my-btn.my-btn{
+            /* your stuff here */
+        }
+        .hover-example{
+            width: 100px;
+            height: 100px;
+            background-color: limegreen;
+            color: white;
+        }
+        /* :hover is pusedoclass */
+        .hover-example:hover{
+            background-color: crimson;
+            width: 150px;
+            height: 150px;
+        }
+
+        .first-child-example{
+            color: crimson;
+            border-bottom: 1px solid black;
+        padding-bottom: 30px;
+        }
+        .first-child-example:nth-child(2n){
+            color: limegreen;
+        }
+        .first-child-example:last-child{
+            /* border-bottom: none; */
+        }
+        /* div::before{
+            content: "before-1";
+        }
+        div::after{
+            content: "after-1";
+        } */
+        .ex-box{
+            border: 3px solid #aaa;
+            background-color: #eee;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* float: left; */
+            margin-right: 10px;
+            border-radius: 5px;
+            font-size: 30px;
+        }
+        /* .ex-box:last-of-type{
+            clear: right;
+        } */
+    </style>
+</head>
+<body>
+    
+<div class="ex-box">
+Box 1
+</div>
+<div class="ex-box">
+    Box 2
+</div>
+    <h1 id="site-brand" class="nav-head nav-main other-useful-class">
+        The Brand of my Website
+    </h1>
+
+    <h1 id="site-brand-2" class="nav-head-2 nav-main-2 other-useful-class-2">
+        The Brand of my Website
+    </h1>
+    
+    <button class="btn btn-large my-btn">Click me</button>
+
+    <div class="hover-example">
+        Hover your mouse over me
+    </div>
+
+    <ol>
+        
+        <li class="first-child-example">Zero</li>
+        <li class="first-child-example">First</li>
+        <li class="first-child-example">Second</li>
+        <li class="first-child-example">Third</li>
+    
+    </ol>
+    
+    <div>
+        before
+            <!-- Rest of stuff inside -->
+        after
+    </div>
+
+</body>
+</html>
