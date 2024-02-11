@@ -32,12 +32,57 @@
             margin-bottom: 10px;
             float: left;
         }
+        .flex-container{
+            display: flex;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .reverse{
+            flex-direction: row-reverse;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .jc-right{
+            justify-content: flex-end;
+            flex-direction: column;
+            height: 1000px;
+        }
+        .jc-center{
+            /* justify-content: center; */
+            justify-content:space-around;
+            align-items: flex-end;
+        }
+        .ai-stretch{
+            align-items: stretch;
+            height: 200px;
+        }
+        /* remove the height from the three boxes */
+        .no-height{
+            height: inherit;
+        }
+        .ai-grow .box-1{
+            flex-grow: 1;
+            width: 0;
+        }
+        .ai-grow .box-2{
+            flex-grow: 5;
+            width: 0;
+        }
+        .ai-grow .box-3{
+            flex-grow: 10;
+            width: 0;
+        }
     </style>
 </head>
 <body>
-    <div class="box-1">1</div>
-    <div class="box-2">2</div>
-    <div class="box-3">3</div>
+
+    <div class="flex-container ai-grow">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    
+    </div>
 
 
 </body>
