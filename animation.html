@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes example {
+            /* to {
+                transform: rotate(360deg);
+            } */
+
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(270deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+
+        }
+
+        div{
+            animation-name: example;
+        }
+
+        .spinner{
+            animation: example .5s  infinite linear;
+            display: inline-block;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner" >😀</div>
+
+</body>
+</html>
